@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="7dp"
+    android:paddingEnd="7dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingStart="7dp"
+    tools:context="com.example.munchkin.mysqlproj.SignUpActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="first name"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:hint="last name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etMiddleName"
+        app:layout_constraintLeft_toLeftOf="@+id/etFirstName"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/etMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:ems="10"
+        android:hint="middle name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintRight_toRightOf="@+id/etLastName"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/etMiddleName"
+        app:layout_constraintRight_toRightOf="@+id/etMiddleName"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+        app:layout_constraintLeft_toLeftOf="@+id/etEmail"
+        app:layout_constraintRight_toRightOf="@+id/etEmail"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:onClick="OnReg"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/tvHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="HaveAccount"
+        android:paddingBottom="0dp"
+        android:paddingEnd="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingStart="7dp"
+        android:paddingTop="7dp"
+        android:text="already have an account?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="440dp" />
+</android.support.constraint.ConstraintLayout>
